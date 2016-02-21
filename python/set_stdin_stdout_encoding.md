@@ -1,5 +1,7 @@
+## Setting encoding for `sys.stdin` and `sys.stdout`
+
 If you want `sys.stdout` to automatically use the default
-encoding. You can explicitly pass an encoding name as a string (such
+encoding, you can explicitly pass an encoding name as a string (such
 as `'utf-8'`) to `getwrite()` if you prefer.
 
 ```python
