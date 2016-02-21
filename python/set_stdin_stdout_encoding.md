@@ -10,4 +10,10 @@ import codecs
 sys.stdout = codecs.getwriter(locale.getpreferredencoding())(sys.stdout)
 ```
 
-Same thing for `sys.stdin`.
+For `sys.stdin`:
+
+```python
+import locale
+import codecs
+sys.stdin = codecs.getreader(locale.getpreferredencoding())(sys.stdin)
+```
