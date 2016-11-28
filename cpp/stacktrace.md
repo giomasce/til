@@ -2,7 +2,7 @@
 
 You can use the following code in a header. You also have to declare
 `bool mmpp_abort` somewhere in the code. Some headers are probably
-excessive. It uses GCC-specific interfaces.
+excessive. It uses GCC-specific interfaces. Link with `-ldl`.
 
 If it does not work (in particular, if it cannot resolve symbols),
 check that `-g` is on and possibly also add `-rdynamic` or
