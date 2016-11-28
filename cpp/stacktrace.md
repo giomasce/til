@@ -1,6 +1,7 @@
 ## Obtain a stacktrace when throwing an exception in C++
 
-You can use the following code. Some headers are probably
+You can use the following code in a header. You also have to declare
+`boot mmpp_abort` somewhere in the code. Some headers are probably
 excessive. It uses GCC-specific interfaces.
 
 If it does not work (in particular, if it cannot resolve symbols),
@@ -14,7 +15,7 @@ References:
  * https://stupefydeveloper.blogspot.it/2008/10/cc-call-stack.html
 
  * http://stackoverflow.com/q/11731229/807307
- 
+
 
 ```cpp
 #ifdef __GNUG__
