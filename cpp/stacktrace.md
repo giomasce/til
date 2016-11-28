@@ -1,7 +1,7 @@
 ## Obtain a stacktrace when throwing an exception in C++
 
 You can use the following code in a header. You also have to declare
-`boot mmpp_abort` somewhere in the code. Some headers are probably
+`bool mmpp_abort` somewhere in the code. Some headers are probably
 excessive. It uses GCC-specific interfaces.
 
 If it does not work (in particular, if it cannot resolve symbols),
