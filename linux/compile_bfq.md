@@ -82,3 +82,10 @@ If you want to enable BFQ on device `sda` use:
     # echo bfq > /sys/block/sda/queue/scheduler
     # cat /sys/block/sda/queue/scheduler
     noop deadline cfq [bfq]
+
+### Use BFQ as the default IO scheduler at boot
+
+Arrange so that `bfq-iosched` is included in the initrd and pass the
+argument `elevator=bfq` to the Linux kernel at boot. No further
+instructions on this because I am not using it for the moment (see the
+original document).
