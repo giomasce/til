@@ -45,18 +45,18 @@ files in it:
 
 Create a `Makefile` in the same directory with the following content:
 
-   ifneq ($(KERNELRELEASE),)
-   # kbuild part of makefile
-   obj-m := bfq-iosched.o
-   bfq-iosched-y: bfq-cgroup.o bfq-ioc.o bfq-iosched.o bfq-sched.o
+    ifneq ($(KERNELRELEASE),)
+    # kbuild part of makefile
+    obj-m := bfq-iosched.o
+    bfq-iosched-y: bfq-cgroup.o bfq-ioc.o bfq-iosched.o bfq-sched.o
 
-   else
-   # normal makefile
-   KDIR ?= /lib/modules/`uname -r`/build
+    else
+    # normal makefile
+    KDIR ?= /lib/modules/`uname -r`/build
 
-   default: $(MAKE) -C $(KDIR) M=$$PWD
+    default: $(MAKE) -C $(KDIR) M=$$PWD
 
-   endif
+    endif
 
 ### Build BFQ
 
