@@ -35,10 +35,10 @@ method).
 ### Copy the relevant files in an out-of-tree directory
 
 Create a directory outside the Linux kernel and copy the following
-files in it:
+files from the subdirectory `block` in it:
 
 * `bfq*.*`
-* `blk.k`
+* `blk.h`
 * `blk-mq.h`
 
 ### Create a `Makefile`
