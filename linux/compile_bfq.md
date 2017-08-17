@@ -40,6 +40,7 @@ files from the subdirectory `block` in it:
 * `bfq*.*`
 * `blk.h`
 * `blk-mq.h`
+* `blk-stat.h`
 
 ### Create a `Makefile`
 
